@@ -8,6 +8,7 @@ import smtplib
 import pickle
 import os
 
+st.set_page_config(page_title="Safe Pass", page_icon="fevicon.png", layout="centered", initial_sidebar_state="auto", menu_items=None)
 st.title('Safe Pass')
 st.subheader("One Place to Secure Your Passwords")
 st.markdown(
@@ -53,14 +54,14 @@ if choice=="Home":
     testp="<p style='font-size:20px'>SafePass is the easier, safer way to unlock your digital world. It’s an application you can download on all your PC to remove the hassle of passwords. Get started by logging in to the Master password app using unique factors image. From there, the app works quietly in the background to make your current passwords stronger, remembers them and instantly logs you in so you don’t have to. </p>"
     st.markdown(testp, unsafe_allow_html=True)
     st.image("main.gif")
-    # if os.path.isfile("reconstructed_image.png"):
-    #     os.remove("reconstructed_image.png")
-    #     os.remove("extracted_grayscale_image.png")
-    #     os.remove("stegoimg.png")
-    #     os.remove("share1.png")
-    #     os.remove("share2.png")
-    #     os.remove("1.png")
-    #     os.remove("otp.pkl")
+     # if os.path.isfile("reconstructed_image.png"):
+     #     os.remove("reconstructed_image.png")
+     #     os.remove("extracted_grayscale_image.png")
+     #     os.remove("stegoimg.png")
+     #     os.remove("share1.png")
+     #     os.remove("share2.png")
+     #     os.remove("1.png")
+     #     os.remove("otp.pkl")
     
 if choice=="Singup":
     st.text("Welcome Signup")
@@ -128,6 +129,7 @@ if choice=="Login":
                     "images/"+str(rn[1])+".jpg",
                     "images/"+str(rn[2])+".jpg",
                     "images/"+str(rn[3])+".jpg",
+                    
                 ],
             )
         if st.sidebar.checkbox("Login"):
@@ -157,42 +159,3 @@ if choice=="Login":
                 st.error("Wrong OTP/Image")
     else:
         st.warning("Not Valid Email")
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
