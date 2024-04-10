@@ -69,7 +69,7 @@ if choice=="Singup":
     Lname=st.text_input("Last Name")
     Email=st.text_input("Email")
     Mobile=st.text_input("Mobile")
-    Password=st.text_input("Passwod",type="password")
+    Password=st.text_input("Password",type="password")
     st.text_input("Confirm Password",type="password")
     rn = [1,2,4,6]
     img = image_select(
@@ -146,7 +146,7 @@ if choice=="Login":
                         delete_site(sts)
                         st.success("Deleted Sucess")
                     site=st.text_input("Site")
-                    user=st.text_input("Email/Password")
+                    user=st.text_input("Email Id")
                     pss=st.text_input("Password",type="password")
                     if st.button("Add to database"):
                         create_site()
